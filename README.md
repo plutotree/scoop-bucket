@@ -13,13 +13,13 @@ scoop install plutotree/<manifestname>
 
 | Name          | Desc                    | Autoupdate |
 | ------------- | ----------------------- | ---------- |
-| bookxnote-pro | BookXNote Pro电子书阅读 | 🛠          |
+| bookxnote-pro | BookXNote Pro电子书阅读 | ✔️⭕️         |
 | cos-browser   | 腾讯云Cos管理工具       | ️️✔️️          |
-| snipaste2     | Snipaste 截图           | 🛠          |
+| snipaste2     | Snipaste 截图           | ️️✔️️          |
 
 - ✔️ Yes
 - ❌ No
 - 🛠 Additional testing is needed
 - ✋
-- ⭕️
+- ⭕️ Hash calculated locally
 - ⛔️

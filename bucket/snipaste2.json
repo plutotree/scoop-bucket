@@ -19,14 +19,18 @@
             "hash": "sha1:2e9820df30212940f54b3ac4478291f63c32e155"
         }
     },
-
     "pre_install": [
         "ensure \"$persist_dir\"",
         "if (!(Test-Path \"$persist_dir\\config.ini\")) { Set-Content \"$persist_dir\\config.ini\" '' -Encoding ASCII }",
         "Set-Content \"$dir\\config.ini\" \"[General]`nconfig=$($persist_dir.Replace('\\','/'))/config.ini\" -Encoding ASCII"
     ],
     "bin": "Snipaste.exe",
-    "shortcuts": [["Snipaste.exe", "Snipaste2"]],
+    "shortcuts": [
+        [
+            "Snipaste.exe",
+            "Snipaste2"
+        ]
+    ],
     "checkver": {
         "url": "https://dl.snipaste.com/sha-1.txt",
         "regex": "Snipaste-([\\d\\.]+)-Beta-x64.zip"

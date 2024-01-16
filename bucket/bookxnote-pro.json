@@ -18,7 +18,12 @@
         "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\uninst*nsis\", \"$dir\\bookxnotepro-windows-*.exe\" -Recurse"
     ],
     "bin": "BookxNotePro.exe",
-    "shortcuts": [["BookxNotePro.exe", "BookxNote Pro"]],
+    "shortcuts": [
+        [
+            "BookxNotePro.exe",
+            "BookxNote Pro"
+        ]
+    ],
     "checkver": {
         "regex": "bookxnotepro-windows-x64-([\\d.]+)-(?<date>\\d+).zip"
     },
