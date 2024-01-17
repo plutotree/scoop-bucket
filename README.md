@@ -15,8 +15,10 @@ scoop install plutotree/<manifestname>
 | --------------- | ------------------------ | ---------- | ---------- | ---------- |
 | bookxnote-pro   | BookXNote Pro 电子书阅读 | ❌ | ✔️⭕️      |      |
 | cos-browser     | 腾讯云 Cos 管理工具      | ️️✔️️ | ️️✔️️      |      |
+| qqmusic | QQ音乐 | ❌ | ✔️⭕️ | |
 | snipaste2       | Snipaste 截图            | ⛔️          | ️️✔️️      |      |
 | tencent-meeting | 腾讯会议                 | ❌                | ️️✔️️      | ✔️️   |
+| tencent-video | 腾讯视频 | ❌ | ✔️⭕️ |  |
 
 - ✔️ Yes
 - ❌ No
