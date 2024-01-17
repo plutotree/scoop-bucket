@@ -13,26 +13,30 @@ scoop install plutotree/<manifestname>
 
 | Name            | Desc                     | AppData              | AutoUpdate | AutoStop |
 | --------------- | ------------------------ | ---------- | ---------- | ---------- |
-| bookxnote-pro   | BookXNote Pro 电子书阅读 | ❌ | ✔️⭕️      |      |
+| bookxnote-pro   | BookXNote Pro 电子书阅读 | ❌ | ⭕️    |      |
 | cos-browser     | 腾讯云 Cos 管理工具      | ️️✔️️ | ️️✔️️      |      |
-| qqmusic | QQ音乐 | ❌ | ✔️⭕️ | |
+| evernote | Evernote | ❌ | ⭕️ | |
+| qqmusic | QQ音乐 | ❌ | ⭕️ | |
 | snipaste2       | Snipaste 截图            | ⛔️          | ️️✔️️      |      |
 | tencent-meeting | 腾讯会议                 | ❌                | ️️✔️️      | ✔️️   |
-| tencent-video | 腾讯视频 | ❌ | ✔️⭕️ |  |
+| tencent-video | 腾讯视频 | ❌ | ⭕️ |  |
 
-- ✔️ Yes
-- ❌ No
-- 🛠 Additional testing is needed
-- ⭕️ Hash calculated locally
-- ⛔️
-- ✋
+- AutoUpdate
+  - ✔️ Yes
+  - ❌ No
+  - ⭕️ Yes，but hash is calculated locally after download
 
+- AppData
+  - ⛔️ Not use `AppData`
+  - ✔️ Yes, use persist directory
+  - ❌ No，use default `AppData` path
+- AutoStop
+  - ✔️ Yes, auto stop process before uninstall
 
+✔️ ❌ 🛠 ⭕️ ⛔️✋
 
 - AutoUpdate: auto update manifest by GitHub actions
 - AutoStop: auto stop process in uninstall script
-
-
 
 ## Notes
 
