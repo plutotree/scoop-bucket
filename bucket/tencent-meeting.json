@@ -6,8 +6,7 @@
     "url": "https://updatecdn.meeting.qq.com/cos/3bbc5afb8f46a191920817c4625f04ea/TencentMeeting_0300000000_3.22.10.402.publish.officialwebsite.exe#/dl.7z",
     "hash": "md5:3bbc5afb8f46a191920817c4625f04ea",
     "pre_install": [
-        "Rename-Item \"$dir\\`$_*_\" \"$dir\\$version\"",
-        "Remove-Item \"$dir\\`$*\",\"$dir\\wemeetapp_new.exe\" -Recurse -Force",
+        "Get-ChildItem -Path \"$dir\" -Filter \"`$_*_\" | Rename-Item -NewName \"$dir\\$version\"",
         "startmenu_shortcut -target $(Get-Item \"$dir\\wemeetapp.exe\") -shortcutName \"Tencent Meeting\"",
         "startmenu_shortcut -target $(Get-Item \"$dir\\wemeetapp.exe\") -shortcutName \"腾讯会议\""
     ],
@@ -17,13 +16,13 @@
         "if (Test-Path \"$(shortcut_folder)\\腾讯会议.lnk\"){Remove-Item \"$(shortcut_folder)\\腾讯会议.lnk\" -Force}"
     ],
     "checkver": {
-        "url": "https://meeting.tencent.com/web-service/query-download-info?q=[{%22package-type%22:%22app%22,%22channel%22:%220300000000%22,%22platform%22:%22windows%22}]&nonce=0000000000000000",
-        "regex": "https://(?<url>.+\\.exe).*?\"version\":.*?\"([\\d.]+)\""
+        "url": "https://meeting.tencent.com/web-service/query-download-info?nonce=0000000000000000&q=%5B%7B%22package-type%22%3A%22app%22%2C%22channel%22%3A%220300000000%22%2C%22platform%22%3A%22windows%22%7D%5D",
+        "regex": "\"url\":\"https://(?<url>[^\"]*)\",\"version\":\"(?<version>[^\"]*)"
     },
     "autoupdate": {
         "url": "https://$matchUrl#/dl.7z",
         "hash": {
-            "url": "https://meeting.tencent.com/web-service/query-download-info?q=[{%22package-type%22:%22app%22,%22channel%22:%220300000000%22,%22platform%22:%22windows%22}]&nonce=0000000000000000",
+            "url": "https://meeting.tencent.com/web-service/query-download-info?nonce=0000000000000000&q=%5B%7B%22package-type%22%3A%22app%22%2C%22channel%22%3A%220300000000%22%2C%22platform%22%3A%22windows%22%7D%5D",
             "mode": "json",
             "jsonpath": "$.info-list[0].md5"
         }
