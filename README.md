@@ -18,20 +18,21 @@ scoop install plutotree/<manifestname>
 | evernote | Evernote | ❌ | ⭕️ | |
 | qqmusic | QQ音乐 | ❌ | ⭕️ | |
 | snipaste2       | Snipaste 截图            | ⛔️          | ️️✔️️      |      |
+| tencent-docs | 腾讯文档 | ❌ | ⭕️ | |
 | tencent-meeting | 腾讯会议                 | ❌                | ️️✔️️      | ✔️️   |
 | tencent-video | 腾讯视频 | ❌ | ⭕️ |  |
-
-- AutoUpdate
-  - ✔️ Yes
-  - ❌ No
-  - ⭕️ Yes，but hash is calculated locally after download
+| ths-yhb | 同花顺远航版 | ❌ | ⭕️ | |
 
 - AppData
   - ⛔️ Not use `AppData`
   - ✔️ Yes, use persist directory
   - ❌ No，use default `AppData` path
-- AutoStop
-  - ✔️ Yes, auto stop process before uninstall
+- AutoUpdate
+  - ✔️ Yes
+  - ❌ No
+  - ⭕️ Yes，but hash is calculated locally after download
+- AutoStop：Automatically stop processes during removing process
+  - ✔️ Yes,
 
 ✔️ ❌ 🛠 ⭕️ ⛔️✋
 
