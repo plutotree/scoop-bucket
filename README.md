@@ -22,13 +22,15 @@ scoop install plutotree/<manifestname>
 | tencent-meeting | 腾讯会议                 | ❌      | ️️✔️️      | ✔️️      |
 | tencent-video   | 腾讯视频                 | ❌      | ⭕️        |          |
 | ths-yhb         | 同花顺远航版             | ❌      | ⭕️        |          |
+| modern-csv      | Modern Csv             | ⛔️      | ⭕️        |          |
+| en-croissant      | En Croissant             | ❌      | ⭕️        |          |
 
 - AppData
   - ⛔️ Not use `AppData`
   - ✔️ Yes, use persist directory
   - ❌ No，use default `AppData` path
 
-- AutoUpdate
+- AutoUpdate: auto update manifest by GitHub actions
   - ✔️ Yes
   - ❌ No
   - ⭕️ Yes，but hash is calculated locally after download
@@ -38,8 +40,6 @@ scoop install plutotree/<manifestname>
 
 ✔️ ❌ 🛠 ⭕️ ⛔️✋
 
-- AutoUpdate: auto update manifest by GitHub actions
-- AutoStop: auto stop process in uninstall script
 
 ## Notes
 
