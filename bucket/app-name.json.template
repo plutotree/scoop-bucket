@@ -30,6 +30,7 @@
     "uninstaller": {
         "script": ""
     },
+    "extract_dir": "",
     "bin": "",
     "env_add_path": [
         "",
