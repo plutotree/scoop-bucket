@@ -1,11 +1,11 @@
 {
     "##": "腾讯文档",
-    "version": "3.6.4",
+    "version": "3.8.1",
     "description": "[腾讯文档] 支持多人在线编辑Word、Excel和PPT文档",
     "homepage": "https://docs.qq.com",
     "license": "Freeware",
-    "url": "https://desktop.docs.qq.com/Installer/30001/3.6.4/TencentDocs-x86_64.exe#/dl.7z",
-    "hash": "8d070ab95bcc4fc78f0139ea1644385a70ada685e67bb08b746734c180b9351e",
+    "url": "https://desktop.docs.qq.com/Installer/30001/3.8.1/TencentDocs-x86_64.exe#/dl.7z",
+    "hash": "a3eaedaa316fb7728258e48fd16ed20a7178ff2754db52b493178e000c17cc38",
     "architecture": {
         "64bit": {
             "pre_install": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\""
