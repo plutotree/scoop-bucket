@@ -40,7 +40,6 @@ scoop install plutotree/<manifestname>
 
 ✔️ ❌ 🛠 ⭕️ ⛔️✋
 
-
 ## Notes
 
 1. Tencent Meeting can only run in version directory, current directory doesn't work. Fortunately, the script has already fix the issue internally.
