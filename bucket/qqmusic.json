@@ -1,15 +1,21 @@
 {
     "##": "QQ音乐",
-    "version": "20.39.0",
+    "version": "20.39",
     "description": "[QQ音乐] 千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台",
     "homepage": "https://y.qq.com",
     "license": "Freeware",
-    "url": "https://dldir1.qq.com/music/clntupate/QQMusic_YQQWinPCDL.exe#/dl.7z",
-    "hash": "5a0c26aa2cf897dcff634f75732acbb9df675ef4992b14102498e1db23f52952",
+    "url": "https://dldir1v6.qq.com/music/clntupate/QQMusic_Setup_2039.exe#/dl.7z",
+    "hash": "8e193a90ee9bace1d2a19792782037a636351ea27a70685e350eea8860a4b8d5",
     "post_install": "Copy-Item \"$dir\\QQMusic.tpc\" \"$dir\\instok\"",
     "checkver": {
-        "url": "https://y.qq.com/download/download.html",
-        "regex": "Windows PC.*\\:([\\d.]+)"
+        "script": [
+            "$api = 'https://u6.y.qq.com/cgi-bin/musicu.fcg'",
+            "$body = '{\"comm\":{\"ct\":\"19\",\"cv\":\"2022\",\"tmeAppID\":\"qqmusic\"},\"platform.uniteUpdate.UniteUpdateSvr.QueryUpdate\":{\"method\":\"QueryUpdate\",\"module\":\"platform.uniteUpdate.UniteUpdateSvr\",\"param\":{\"chid\":\"1001\",\"osVer\":1}}}'",
+            "$Response = (Invoke-RestMethod $api -Method POST -Body $body) | ConvertTo-Json -Compress",
+            "return $Response"
+        ],
+        "regex": "QQMusic_Setup_(?<version>(?<major>\\d{2})(?<minor>\\d{2})).exe",
+        "replace": "${major}.${minor}"
     },
     "shortcuts": [
         [
@@ -22,6 +28,6 @@
         ]
     ],
     "autoupdate": {
-        "url": "https://dldir1.qq.com/music/clntupate/QQMusic_YQQWinPCDL.exe#/dl.7z"
+        "url": "https://dldir1v6.qq.com/music/clntupate/QQMusic_Setup_$cleanVersion.exe#/dl.7z"
     }
 }
