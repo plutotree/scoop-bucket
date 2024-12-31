@@ -1,10 +1,10 @@
 {
-    "version": "3.30.1.471",
+    "version": "3.30.2.413",
     "description": "[腾讯会议] 提供一站式音视频会议解决方案，让您能随时随地体验高清流畅的会议以及会议协作",
     "homepage": "https://meeting.tencent.com",
     "license": "Freeware",
-    "url": "https://updatecdn.meeting.qq.com/cos/3f0a41ceec643403cc23bb5ecad45ded/TencentMeeting_0300000000_3.30.1.471.publish.officialwebsite.exe#/dl.7z",
-    "hash": "md5:3f0a41ceec643403cc23bb5ecad45ded",
+    "url": "https://updatecdn.meeting.qq.com/cos/67f0cc299517920c3a5914fd03cd98f9/TencentMeeting_0300000000_3.30.2.413.publish.officialwebsite.exe#/dl.7z",
+    "hash": "md5:67f0cc299517920c3a5914fd03cd98f9",
     "pre_install": [
         "Get-ChildItem -Path \"$dir\" -Filter \"`$_*_\" | Rename-Item -NewName \"$dir\\$version\"",
         "startmenu_shortcut -target $(Get-Item \"$dir\\wemeetapp.exe\") -shortcutName \"Tencent Meeting\"",
