@@ -26,6 +26,7 @@ scoop install plutotree/<manifestname>
 | ths-yhb         | 同花顺远航版             | ❌      | ⭕️        |          |
 | modern-csv      | Modern Csv             | ⛔️      | ⭕️        |          |
 | en-croissant      | En Croissant             | ❌      | ⭕️        |          |
+| windows-11-context-menu-manager | Windows 11 Context Menu Manager | ⛔️ | ⭕️ | |
 
 - AppData
   - ⛔️ Not use `AppData`
