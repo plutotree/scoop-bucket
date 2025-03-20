@@ -1,11 +1,11 @@
 {
     "##": "QQ音乐",
-    "version": "21.16",
+    "version": "21.20",
     "description": "[QQ音乐] 千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台",
     "homepage": "https://y.qq.com",
     "license": "Freeware",
-    "url": "https://dldir1v6.qq.com/music/clntupate/QQMusic_Setup_2116.exe#/dl.7z",
-    "hash": "988a3a11fe34bb79e2bcd92d13c584218a3aceaf4d0e3e417d98bcc2994ae961",
+    "url": "https://dldir1v6.qq.com/music/clntupate/QQMusic_Setup_2120.exe#/dl.7z",
+    "hash": "c78d718b99683ee4cf83ada655399b1e6ab27dcac6eec3955394d74023b1ba8d",
     "post_install": "Copy-Item \"$dir\\QQMusic.tpc\" \"$dir\\instok\"",
     "checkver": {
         "script": [
