@@ -2,7 +2,7 @@ on:
   workflow_dispatch:
   schedule:
     # run every 4 hours
-    - cron: '20 */4 * * *'
+    - cron: "20 */4 * * *"
 name: Excavator
 jobs:
   excavate:
@@ -14,5 +14,6 @@ jobs:
         uses: ScoopInstaller/GithubActions@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COOKIE_YUANBAO_TENCENT_COM: ${{ secrets.COOKIE_YUANBAO_TENCENT_COM }}
           SKIP_UPDATED: 1
           THROW_ERROR: 0
