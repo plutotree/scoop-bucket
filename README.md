@@ -23,6 +23,7 @@ scoop install plutotree/<manifestname>
 | tencent-docs    | 腾讯文档                 | ❌      | ⭕️        |          |
 | tencent-meeting | 腾讯会议                 | ❌      | ️️✔️️      | ✔️️      |
 | tencent-video   | 腾讯视频                 | ❌      | ⭕️        |          |
+| tencent-yuanbao | 腾讯元宝 | ❌ | ❓ | |
 | ths-yhb         | 同花顺远航版             | ❌      | ⭕️        |          |
 | modern-csv      | Modern Csv             | ⛔️      | ⭕️        |          |
 | en-croissant      | En Croissant             | ❌      | ⭕️        |          |
@@ -37,11 +38,19 @@ scoop install plutotree/<manifestname>
   - ✔️ Yes
   - ❌ No
   - ⭕️ Yes，but hash is calculated locally after download
-
+  - ❓special problem
+  
 - AutoStop：Automatically stop processes during removing process
   - ✔️ Yes
 
-✔️ ❌ 🛠 ⭕️ ⛔️✋
+> `腾讯元宝 ` 无法找到合适的办法在非登录态获取版本号及最新的下载地址。官网支持匿名状态下“登录”流程，但是相关逻辑细节较复杂。目前的实现方式，需要依赖cookie信息，可以用匿名后的cookie信息，比如开启一个隐私窗口，打开"https://yuanbao.tencent.com" 后，将cookie结果保存在下述的环境变量中即可正常运行，GitHub Actions运行的时候也会指定cookie。
+> `COOKIE_YUANBAO_TENCENT_COM`
+>
+> （如果谁梳理清楚了匿名登录的流程可以反馈下）
+
+
+
+✔️ ❌ 🛠 ⭕️❓
 
 ## Notes
 
