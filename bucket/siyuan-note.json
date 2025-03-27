@@ -1,13 +1,13 @@
 {
     "##": "思源笔记",
-    "version": "3.0.4",
+    "version": "3.1.26",
     "description": "[思源笔记] 隐私优先的个人知识管理系统，支持 Markdown 排版、块级引用和双向链接",
     "homepage": "https://b3log.org/siyuan",
     "license": "AGPL-3.0",
     "architecture": {
         "64bit": {
-            "url": "https://release.b3log.org/siyuan/siyuan-3.0.4-win.exe#/dl.7z",
-            "hash": "e1559a36743bd964ae762abba26975e1bb9ef0d17073ac3f21cc68fa233bdb28",
+            "url": "https://release.b3log.org/siyuan/siyuan-3.1.26-win.exe#/dl.7z",
+            "hash": "8d3e1f49369a732ff6769dbddd1bf113e0033e5ae600bf6ffb830ed6f831a3b4",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\" -Recurse"
@@ -17,16 +17,12 @@
     "shortcuts": [
         [
             "siyuan.exe",
-            "SiYuan Note"
-        ],
-        [
-            "siyuan.exe",
             "思源笔记"
         ]
     ],
     "checkver": {
         "url": "https://b3log.org/siyuan/download.html",
-        "regex": "https://release.b3log.org/siyuan/siyuan-([\\d.]+)-win.exe"
+        "regex": "https://release.liuyun.io/siyuan/siyuan-([\\d.]+)-win.exe"
     },
     "autoupdate": {
         "architecture": {
