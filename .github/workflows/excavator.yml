@@ -15,5 +15,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           COOKIE_YUANBAO_TENCENT_COM: ${{ secrets.COOKIE_YUANBAO_TENCENT_COM }}
-          SKIP_UPDATED: 1
+          SKIP_UPDATED: 0
           THROW_ERROR: 0
