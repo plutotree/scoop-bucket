@@ -1,13 +1,18 @@
 {
     "##": "腾讯元宝",
-    "version": "1.6.2.626",
+    "version": "1.7.1.613",
     "description": "[腾讯元宝] 基于腾讯混元大模型的AI应用，可以帮你写作绘画文案翻译编程搜索阅读总结的全能助手",
     "homepage": "https://yuanbao.tencent.com",
     "license": "Freeware",
-    "url": "https://cdn-hybrid-prod.hunyuan.tencent.com/Desktop/official/32dfb9df0899fc7bd23c1ef4513a624f/yuanbao_1.6.2.626_x64.exe#dl.7z",
-    "hash": "11d0e745e32a1a32871e90ca9102fab5ed1d02f3ee9b1f9106e0b06aa52ac82f",
+    "url": "https://cdn-hybrid-prod.hunyuan.tencent.com/Desktop/official/6a006c889605e4a0210ab8b2c38472c4/yuanbao_1.7.1.613_x64.exe#dl.7z",
+    "hash": "f4a0a9f5c9b4b324b434a7ac3c4aad859c32565b1df828e721988bf2de94238d",
     "post_install": "Remove-Item \"$dir\\`$*\" -Force -Recurse",
-    "shortcuts": [["yuanbao.exe", "腾讯元宝"]],
+    "shortcuts": [
+        [
+            "yuanbao.exe",
+            "腾讯元宝"
+        ]
+    ],
     "checkver": {
         "script": [
             "$url='https://yuanbao.tencent.com/api/info/general'",
