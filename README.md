@@ -52,7 +52,7 @@ scoop install plutotree/<manifestname>
 
 1. Tencent Meeting can only run in version directory, current directory doesn't work. Fortunately, the script has already fix the issue internally.
 2. Tencent Yuanbao: No reliable method has found to fetch the version number or latest download URL without authentication. While the official website supports an anonymous "login" flow, the underlying logic is complex. The current implementation relies on cookie data.
-   You can use anonymized cookies (e.g., open a private/incognito window, visit https://yuanbao.tencent.com, then save the resulting cookies to the environment variable below) to run the workflow. GitHub Actions will also require specifying this cookie during execution: `COOKIE_YUANBAO_TENCENT_COM`
+   You can use anonymized cookies (e.g., open a private/incognito window, visit <https://yuanbao.tencent.com>, then save the resulting cookies to the environment variable below) to run the workflow. GitHub Actions will also require specifying this cookie during execution: `COOKIE_YUANBAO_TENCENT_COM`
    (If anyone clarifies the anonymous login workflow, please share feedback.)
 
 ## Changelog
