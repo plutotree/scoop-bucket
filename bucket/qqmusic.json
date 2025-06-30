@@ -1,21 +1,21 @@
 {
     "##": "QQ音乐",
-    "version": "21.45",
+    "version": "21.51.0.0",
     "description": "[QQ音乐] 千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台",
     "homepage": "https://y.qq.com",
     "license": "Freeware",
-    "url": "https://dldir1v6.qq.com/music/clntupate/QQMusic_Setup_2145.exe#/dl.7z",
-    "hash": "a9336bc2f1f1c0dba8e1ddef11b6d544a05dc2a45c15fadb851bf93cb073ee77",
+    "url": "https://webcdn.m.qq.com/spcmgr/download/QQMusic_Setup_2151.exe#/dl.7z",
+    "hash": "ec531a4cd08f09f04431fca052d4879db13becc45b9d24c151e8d3162409cdda",
     "post_install": "Copy-Item \"$dir\\QQMusic.tpc\" \"$dir\\instok\"",
     "checkver": {
         "script": [
-            "$api = 'https://u6.y.qq.com/cgi-bin/musicu.fcg'",
-            "$body = '{\"comm\":{\"ct\":\"19\",\"cv\":\"2022\",\"tmeAppID\":\"qqmusic\"},\"platform.uniteUpdate.UniteUpdateSvr.QueryUpdate\":{\"method\":\"QueryUpdate\",\"module\":\"platform.uniteUpdate.UniteUpdateSvr\",\"param\":{\"chid\":\"1001\",\"osVer\":1}}}'",
-            "$Response = (Invoke-RestMethod $api -Method POST -Body $body) | ConvertTo-Json -Compress",
-            "return $Response"
+            "$res = Invoke-WebRequest -UseBasicParsing -Uri 'https://luban.m.qq.com/api/public/software-manager/softwareProxy' -Body 'cmdid=3318&jprxReq[req][soft_id_list]=10' -Method 'POST'",
+            "$content = $res.Content | ConvertFrom-Json",
+            "$verName = $content.resp.soft_list[0].ver_name",
+            "$fileName = $content.resp.soft_list[0].file_name",
+            "Write-Output \"$verName|$fileName\""
         ],
-        "regex": "QQMusic_Setup_(?<version>(?<major>\\d{2})(?<minor>\\d{2})).exe",
-        "replace": "${major}.${minor}"
+        "regex": "(?<version>[\\d.]+)\\|(?<id>.*)"
     },
     "shortcuts": [
         [
@@ -28,6 +28,6 @@
         ]
     ],
     "autoupdate": {
-        "url": "https://dldir1v6.qq.com/music/clntupate/QQMusic_Setup_$cleanVersion.exe#/dl.7z"
+        "url": "https://webcdn.m.qq.com/spcmgr/download/$matchId#/dl.7z"
     }
 }
