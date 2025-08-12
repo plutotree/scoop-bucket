@@ -15,22 +15,23 @@ scoop install plutotree/<manifestname>
 
 ## Manifests
 
-| Name            | Desc                     | AppData | AutoUpdate | AutoStop |
-| --------------- | ------------------------ | ------- | ---------- | -------- |
-| bookxnote-pro   | BookXNote Pro 电子书阅读 | ❌      | ⭕️        |          |
-| cherry-studio | Cherry Studio 大模型AI助手 | ❌ | Yes | |
-| cos-browser     | 腾讯云 Cos 管理工具      | ️️✔️️   | ️️✔️️      |          |
-| en-croissant      | En Croissant             | ❌      | ⭕️        |          |
-| evernote        | Evernote                 | ❌      | ⭕️        |          |
-| modern-csv | Modern CSV 查看工具 | ❌ | ✔️️ | |
-| qqmusic         | QQ 音乐                  | ❌      | ⭕️        |          |
-| snipaste2       | Snipaste 截图            | ⛔️     | ️️✔️️      |          |
-| tencent-docs    | 腾讯文档                 | ❌      | ⭕️        |          |
-| tencent-meeting | 腾讯会议                 | ❌      | ️️✔️️      | ✔️️      |
-| tencent-video   | 腾讯视频                 | ❌      | ⭕️        |          |
-| tencent-yuanbao | 腾讯元宝 | ❌ | ❓ | |
-| ths-yhb         | 同花顺远航版             | ❌      | ⭕️        |          |
-| windows-11-context-menu-manager | Windows 11 Context Menu Manager | ⛔️ | ⭕️ | |
+| Name                            | Desc                            | AppData | AutoUpdate | AutoStop |
+| ------------------------------- | ------------------------------- | ------- | ---------- | -------- |
+| bookxnote-pro                   | BookXNote Pro 电子书阅读        | ❌       | ⭕️          |          |
+| cherry-studio                   | Cherry Studio 大模型AI助手      | ❌       | Yes        |          |
+| cos-browser                     | 腾讯云 Cos 管理工具             | ️️✔️️      | ️️✔️️         |          |
+| en-croissant                    | En Croissant                    | ❌       | ⭕️          |          |
+| evernote                        | Evernote                        | ❌       | ⭕️          |          |
+| modern-csv                      | Modern CSV 查看工具             | ❌       | ✔️️          |          |
+| qqmusic                         | QQ 音乐                         | ❌       | ⭕️          |          |
+| snipaste2                       | Snipaste 截图                   | ⛔️       | ️️✔️️         |          |
+| tencent-docs                    | 腾讯文档                        | ❌       | ⭕️          |          |
+| tencent-meeting                 | 腾讯会议                        | ❌       | ️️✔️️         | ✔️️        |
+| tencent-video                   | 腾讯视频                        | ❌       | ⭕️          |          |
+| tencent-yuanbao                 | 腾讯元宝                        | ❌       | ❓          |          |
+| ths-yhb                         | 同花顺远航版                    | ❌       | ⭕️          |          |
+| windows-11-context-menu-manager | Windows 11 Context Menu Manager | ⛔️       | ⭕️          |          |
+| dyad                            | AI app builder                  | ❌       | ✔️          |          |
 
 - AppData
   - ⛔️ Not use `AppData`
