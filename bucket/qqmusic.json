@@ -1,11 +1,11 @@
 {
     "##": "QQ音乐",
-    "version": "21.71.0.0",
+    "version": "21.81.0.0",
     "description": "[QQ音乐] 千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台",
     "homepage": "https://y.qq.com",
     "license": "Freeware",
-    "url": "https://webcdn.m.qq.com/spcmgr/download/QQMusic_Setup_2171.exe#/dl.7z",
-    "hash": "d1e920395c94337e4d339c3fb97f0cddbdd8638455063e754c14afe2651fc00f",
+    "url": "https://webcdn.m.qq.com/spcmgr/download/QQMusic_Setup_2181.exe#/dl.7z",
+    "hash": "febe9bbc2d582abfa6384e825991f70995c2eb1ef9869faf09aa84f4ffac2873",
     "post_install": "Copy-Item \"$dir\\QQMusic.tpc\" \"$dir\\instok\"",
     "checkver": {
         "script": [
