@@ -1,11 +1,11 @@
 {
     "##": "CherryStudio",
-    "version": "1.7.1",
+    "version": "1.7.2",
     "description": "[Cherry Studio] 是一款强大的多模型AI 助手，支持iOS、macOS 和 Windows 平台。快速切换多个先进的 LLM 模型，提升工作学习效率",
     "homepage": "https://github.com/CherryHQ/cherry-studio",
     "license": "Apache-2.0",
-    "url": "https://github.com/CherryHQ/cherry-studio/releases/download/v1.7.1/Cherry-Studio-1.7.1-x64-setup.exe#/dl.7z",
-    "hash": "1a7fe9da00fa64a066f67b0df77d0737976c07934b51b10715925a90d322bdb3",
+    "url": "https://github.com/CherryHQ/cherry-studio/releases/download/v1.7.2/Cherry-Studio-1.7.2-x64-setup.exe#/dl.7z",
+    "hash": "e1b7fda232329b65704e9a93faafab59c41b616f21e56a9e57c345e15923119d",
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/CherryHQ/cherry-studio/releases/download/v$version/Cherry-Studio-$version-x64-setup.exe#/dl.7z"
