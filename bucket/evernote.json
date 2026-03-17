@@ -1,10 +1,10 @@
 {
-    "version": "11.7.3",
+    "version": "11.7.2",
     "description": "[Evernote] Use it for note taking, project planning and organize everything",
     "homepage": "https://evernote.com",
     "license": "Freeware",
     "url": "https://win.desktop.evernote.com/builds/Evernote-latest.exe#/dl.7z",
-    "hash": "961ef0383d5020b027596d3cd54f304c28aa9d3c1750c5e8b9aa102ad2647000",
+    "hash": "73df80ca08c7a6e84a735078ef0b51f2ec944011a90fcd8f03f67d7a62b69d57",
     "architecture": {
         "64bit": {
             "pre_install": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\""
